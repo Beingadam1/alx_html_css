@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+article {
+  flex: 2;
+  overflow-y: auto;
+}
+
+aside {
+  flex: 1;
+  overflow-y: auto;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  padding: 10px;
+  background-color: #000;
+}
+
+table,
+th,
+td {
+  border: 1px #000 solid;
+  border-collapse: collapse;
+  padding: 3px;
+}
+
+p {
+  background-color: #ccc;
+  margin-right: 10px;
+  padding: 3px;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+}

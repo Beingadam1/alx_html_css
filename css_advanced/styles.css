@@ -1,0 +1,297 @@
+:root {
+  --text: #fff;
+  --primary-color: #c271ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  color: var(--text-color-white);
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* HEADER/HERO */
+
+.wrapper header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.wrapper header .links a {
+  color: var(--text);
+  padding-right: 2rem;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  transition: all 0.4s;
+  font-weight: 700;
+}
+
+.wrapper header .links a:hover {
+  color: var(--primary-color);
+}
+
+.wrapper {
+  background: url(./images/Object.png) no-repeat top center/cover;
+  text-align: center;
+  color: var(--text);
+}
+
+.wrapper .banner .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper .banner .hero .hero-content {
+  padding-top: 8rem;
+  margin-bottom: 10rem;
+}
+
+.wrapper .banner .hero .hero-content h1 {
+  font-size: 6rem;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.wrapper .banner .hero .hero-content p {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  word-spacing: 2.3rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+
+.wrapper .banner .hero .pros span {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.wrapper .banner .hero .pros > h2 {
+  font-weight: 300;
+  padding-bottom: 4rem;
+}
+
+.wrapper .banner .hero .pros .learners {
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 3rem;
+}
+
+.wrapper .banner .hero .pros .learners img {
+  border-radius: 50%;
+}
+
+/* END OF HEADER/HERO */
+
+/* QUOTE SECTION */
+#quote {
+  background-color: var(--primary-color);
+  padding: 5rem 0;
+  color: var(--text);
+}
+
+#quote .quote-card {
+  display: flex;
+  gap: 3rem;
+  margin: 0 6rem;
+}
+
+#quote .quote-card div {
+  line-height: 1.7;
+}
+
+#quote .quote-card blockquote {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+#quote .quote-card p {
+  margin-top: 0.5rem;
+}
+
+/* END OF QUOTE SECTION */
+
+/* VIDEO LIST SECTION */
+#video-list {
+  padding: 3rem 0;
+}
+#video-list h2 {
+  padding-bottom: 3rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+#video-list h2 span {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+#video-list .list-flex {
+  display: flex;
+  gap: 1rem;
+  /* margin-bottom: 2rem; */
+}
+
+#video-list .list-flex h3 {
+  padding: 0.7rem;
+}
+
+#video-list .list-flex p {
+  padding: 0.7rem 0;
+  line-height: 1.3;
+}
+
+#video-list .list-flex .inner-flex {
+  display: flex;
+  gap: 1rem;
+  color: var(--primary-color);
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+}
+
+#video-list .list-flex .inner-flex img {
+  width: 30px;
+  height: 30px;
+}
+
+#video-list .list-flex .star-flex {
+  display: flex;
+  justify-content: space-between;
+  color: var(--primary-color);
+}
+
+#video-list .list-flex .star-flex p {
+  padding: 0;
+}
+/* END OF VIDEO LIST SECTION */
+
+/* MEMBERSHIP SECTION */
+#membership {
+  background-color: black;
+  color: var(--text);
+  padding: 3rem 0;
+}
+
+#membership h2 span {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+#membership h2 {
+  padding-bottom: 3rem;
+  font-weight: 300;
+
+  text-align: center;
+}
+
+#membership .membership-flex {
+  display: flex;
+  gap: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#membership .membership-flex h3 {
+  padding: 1rem 0;
+}
+
+#membership .membership-flex p {
+  line-height: 1.3;
+}
+
+#membership button {
+  display: block;
+  margin: auto;
+}
+/* END OF MEMBERSHIP SECTION */
+
+/* FAQ SECTION */
+#faq h2 {
+  padding: 3rem 0;
+  text-align: center;
+  font-weight: 300;
+}
+
+#faq .faq-flex {
+  display: flex;
+  gap: 10rem;
+  padding: 0 5rem;
+  line-height: 1.3;
+  margin-bottom: 3rem;
+}
+
+#faq .faq-flex p {
+  padding: 0.8rem 0 2.5rem;
+}
+/* END OF FAQ SECTION */
+
+/*  FOOTER */
+footer {
+  background-color: #000;
+}
+
+footer p {
+  text-align: center;
+  color: var(--text);
+  font-size: 0.6rem;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0 3rem;
+}
+
+.footer-wrap a img {
+  width: 200px;
+}
+
+.footer-wrap .socials i {
+  color: var(--text);
+  padding-right: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.footer-wrap .socials i:hover {
+  color: var(--primary-color);
+}
+
+/* END OF FOOTER */
